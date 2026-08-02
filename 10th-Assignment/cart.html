@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Furniro - Cart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="cart-page">
+  <header class="site-header">
+    <div class="header-inner comparison-header-inner">
+      <a class="brand" href="index.html" aria-label="Furniro home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>Furniro</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="index.html#about">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button" type="button" aria-label="Account"><img src="assets/icons/account.svg" alt="" /></button>
+        <button class="icon-button" type="button" aria-label="Search"><img src="assets/icons/search.svg" alt="" /></button>
+        <button class="icon-button" type="button" aria-label="Wishlist"><img src="assets/icons/heart.svg" alt="" /></button>
+        <button class="icon-button cart-trigger" type="button" aria-label="Open shopping cart" aria-controls="cart-drawer" aria-expanded="false"><img src="assets/icons/cart.svg" alt="" /></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="comparison-banner cart-banner" aria-labelledby="cart-page-title">
+      <div class="comparison-banner-content">
+        <span class="comparison-banner-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <h1 id="cart-page-title">Cart</h1>
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span aria-hidden="true">›</span><span>Cart</span>
+        </nav>
+      </div>
+    </section>
+
+    <section class="cart-page-content" aria-label="Shopping cart">
+      <div class="cart-page-inner">
+        <div class="cart-table-panel">
+          <div class="cart-table-head" aria-hidden="true">
+            <span>Product</span>
+            <span>Price</span>
+            <span>Quantity</span>
+            <span>Subtotal</span>
+            <span></span>
+          </div>
+
+          <article class="cart-table-row">
+            <div class="cart-product-cell">
+              <div class="cart-product-image">
+                <img src="assets/images/asgaard-main.jpg" alt="Asgaard sofa" />
+              </div>
+              <h2>Asgaard sofa</h2>
+            </div>
+            <p class="cart-price">Rs. 250,000.00</p>
+            <label class="cart-quantity">
+              <span class="sr-only">Quantity</span>
+              <input type="text" inputmode="numeric" value="1" aria-label="Asgaard sofa quantity" />
+            </label>
+            <p class="cart-line-total">Rs. 250,000.00</p>
+            <button class="cart-trash" type="button" aria-label="Remove Asgaard sofa">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 7h16M9 7V4h6v3M7 7l1 13h8l1-13M10 11v5M14 11v5" />
+              </svg>
+            </button>
+          </article>
+        </div>
+
+        <aside class="cart-totals" aria-labelledby="cart-totals-title">
+          <h2 id="cart-totals-title">Cart Totals</h2>
+          <dl>
+            <div><dt>Subtotal</dt><dd>Rs. 250,000.00</dd></div>
+            <div class="cart-grand-total"><dt>Total</dt><dd>Rs. 250,000.00</dd></div>
+          </dl>
+          <a class="cart-checkout-button" href="checkout.html">Check Out</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="shop-benefits cart-benefits" aria-label="Shopping benefits">
+      <div class="benefits-inner">
+        <article class="benefit-item">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M20 6h24v10c0 8-5 15-12 17-7-2-12-9-12-17V6Z"/><path d="M20 11H9v6c0 7 5 12 12 12M44 11h11v6c0 7-5 12-12 12M27 33v9M37 33v9M21 42h22M18 51h28v7H18z"/></svg>
+          <div><h2>High Quality</h2><p>crafted from top materials</p></div>
+        </article>
+        <article class="benefit-item">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="m32 5 7 5 9-1 3 8 8 4-1 9 5 7-5 7 1 9-8 4-3 8-9-1-7 5-7-5-9 1-3-8-8-4 1-9-5-7 5-7-1-9 8-4 3-8 9 1z"/><path d="m22 33 7 7 14-16"/></svg>
+          <div><h2>Warranty Protection</h2><p>Over 2 years</p></div>
+        </article>
+        <article class="benefit-item">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M7 8h42v36H7zM49 21h7l3 9v14H49zM7 19h42M18 8v11M38 8v11"/><circle cx="18" cy="48" r="6"/><circle cx="49" cy="48" r="6"/></svg>
+          <div><h2>Free Shipping</h2><p>Order over 150 $</p></div>
+        </article>
+        <article class="benefit-item">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M11 34v-7a21 21 0 0 1 42 0v7M11 31H5v17h10V31zM53 31h6v17H49V31zM49 48v3c0 5-4 8-9 8h-6"/><path d="M25 58h10"/></svg>
+          <div><h2>24 / 7 Support</h2><p>Dedicated support</p></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer comparison-footer cart-footer" id="contact">
+    <div class="footer-grid comparison-footer-grid">
+      <div class="footer-brand"><h2>Funiro.</h2><p>400 University Drive Suite 200 Coral Gables,<br />FL 33134 USA</p></div>
+      <div class="footer-column"><h3>Links</h3><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="index.html#about">About</a><a href="contact.html">Contact</a><a href="blog.html">Blog</a></div>
+      <div class="footer-column"><h3>Help</h3><a href="#">Payment Options</a><a href="#">Returns</a><a href="#">Privacy Policies</a></div>
+      <div class="newsletter"><h3>Newsletter</h3><form action="#"><label class="sr-only" for="cart-email">Email address</label><input id="cart-email" type="email" placeholder="Enter Your Email Address" /><button type="submit">SUBSCRIBE</button></form></div>
+    </div>
+    <div class="copyright comparison-copyright"><p>2023 furino. All rights reverved</p></div>
+  </footer>
+
+  <div class="cart-backdrop" data-cart-close aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-labelledby="cart-drawer-title" aria-hidden="true">
+    <div class="cart-drawer-header">
+      <h2 id="cart-drawer-title">Shopping Cart</h2>
+      <button class="cart-drawer-close" type="button" data-cart-close aria-label="Close shopping cart"><img src="assets/icons/cart-close-bag.svg" alt="" /></button>
+      <span class="cart-drawer-rule" aria-hidden="true"></span>
+    </div>
+    <div class="cart-drawer-items">
+      <article class="cart-drawer-item">
+        <div class="cart-item-image"><img src="assets/images/asgaard-main.jpg" alt="Asgaard sofa" /></div>
+        <div class="cart-item-copy"><h3>Asgaard sofa</h3><p><span>1</span><span class="cart-times">×</span><strong>Rs. 250,000.00</strong></p></div>
+        <button class="cart-item-remove" type="button" aria-label="Remove Asgaard sofa">×</button>
+      </article>
+      <article class="cart-drawer-item">
+        <div class="cart-item-image"><img src="assets/images/cart-casaliving.jpg" alt="Casaliving Wood sofa" /></div>
+        <div class="cart-item-copy"><h3>Casaliving Wood</h3><p><span>1</span><span class="cart-times">×</span><strong>Rs. 270,000.00</strong></p></div>
+        <button class="cart-item-remove" type="button" aria-label="Remove Casaliving Wood">×</button>
+      </article>
+    </div>
+    <div class="cart-drawer-summary">
+      <div class="cart-subtotal"><span>Subtotal</span><strong>Rs. 520,000.00</strong></div>
+      <div class="cart-drawer-actions">
+        <a class="cart-pill cart-pill-cart" href="cart.html">Cart</a>
+        <a class="cart-pill cart-pill-checkout" href="checkout.html">Checkout</a>
+        <a class="cart-pill cart-pill-comparison" href="comparison.html">Comparison</a>
+      </div>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>

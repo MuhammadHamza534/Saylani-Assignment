@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Furniro - Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="shop-page">
+  <header class="site-header">
+    <div class="header-inner container-wide">
+      <a class="brand" href="index.html" aria-label="Furniro home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>Furniro</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="shop.html" aria-current="page">Shop</a>
+        <a href="index.html#about">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button" type="button" aria-label="Account"><img src="assets/icons/account.svg" alt="" /></button>
+        <button class="icon-button" type="button" aria-label="Search"><img src="assets/icons/search.svg" alt="" /></button>
+        <button class="icon-button" type="button" aria-label="Wishlist"><img src="assets/icons/heart.svg" alt="" /></button>
+        <button class="icon-button" type="button" aria-label="Cart"><img src="assets/icons/cart.svg" alt="" /></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="shop-banner" aria-labelledby="shop-title">
+      <div class="shop-banner-content">
+        <h1 id="shop-title">Shop</h1>
+        <div class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">›</span>
+          <span>Shop</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop-toolbar" aria-label="Shop controls">
+      <div class="shop-toolbar-inner container">
+        <div class="toolbar-left">
+          <button type="button" class="toolbar-button" aria-label="Filter products">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M7 12h10M10 17h4"/><circle cx="8" cy="7" r="1.5"/><circle cx="15" cy="12" r="1.5"/><circle cx="12" cy="17" r="1.5"/></svg>
+            <span>Filter</span>
+          </button>
+          <button type="button" class="view-button" aria-label="Grid view">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="5" height="5"/><rect x="15" y="4" width="5" height="5"/><rect x="4" y="15" width="5" height="5"/><rect x="15" y="15" width="5" height="5"/></svg>
+          </button>
+          <button type="button" class="view-button" aria-label="List view">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="4"/><rect x="4" y="15" width="16" height="4"/></svg>
+          </button>
+          <span class="toolbar-divider" aria-hidden="true"></span>
+          <p class="result-count">Showing 1–16 of 32 results</p>
+        </div>
+
+        <div class="toolbar-right">
+          <label class="toolbar-field show-field">Show <input type="text" value="16" inputmode="numeric" autocomplete="off" aria-label="Products per page" /></label>
+          <label class="toolbar-field sort-field">Short by <input type="text" value="Default" autocomplete="off" spellcheck="false" aria-label="Sort order" /></label>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop-products" aria-label="Products">
+      <div class="shop-product-grid container">
+        <!-- Row 1 -->
+        <article class="shop-product-card" data-product-link="single-product.html">
+          <div class="shop-product-image"><img src="assets/images/product-1.jpg" alt="Syltherine stylish cafe chair" /><span class="badge badge-sale">-30%</span></div>
+          <div class="shop-product-info"><h2>Syltherine</h2><p>Stylish cafe chair</p><div class="price-row"><strong>Rp 2.500.000</strong><del>Rp 3.500.000</del></div></div>
+          <div class="shop-product-overlay"><button type="button" class="add-cart">Add to cart</button><div class="overlay-links"><a href="#">↗ Share</a><a href="comparison.html">⇄ Compare</a><a href="#">♡ Like</a></div></div>
+        </article>
+        <article class="shop-product-card">
+          <div class="shop-product-image"><img src="assets/images/product-2.jpg" alt="Leviosa stylish cafe chair" /></div>
+          <div class="shop-product-info"><h2>Leviosa</h2><p>Stylish cafe chair</p><div class="price-row"><strong>Rp 2.500.000</strong></div></div>
+          <div class="shop-product-overlay"><button type="button" class="add-cart">Add to cart</button><div class="overlay-links"><a href="#">↗ Share</a><a href="comparison.html">⇄ Compare</a><a href="#">♡ Like</a></div></div>
+        </article>
+        <article class="shop-product-card">
+          <div class="shop-product-image"><img src="assets/images/product-3.jpg" alt="Lolito luxury big sofa" /><span class="badge badge-sale">-50%</span></div>
+          <div class="shop-product-info"><h2>Lolito</h2><p>Luxury big sofa</p><div class="price-row"><strong>Rp 7.000.000</strong><del>Rp 14.000.000</del></div></div>
+          <div class="shop-product-overlay"><button type="button" class="add-cart">Add to cart</button><div class="overlay-links"><a href="#">↗ Share</a><a href="comparison.html">⇄ Compare</a><a href="#">♡ Like</a></div></div>
+        </article>
+        <article class="shop-product-card">
+          <div class="shop-product-image"><img src="assets/images/product-4.jpg" alt="Respira outdoor bar table and stool" /><span class="badge badge-new">New</span></div>
+          <div class="shop-product-info"><h2>Respira</h2><p>Outdoor bar table and stool</p><div class="price-row"><strong>Rp 500.000</strong></div></div>
+          <div class="shop-product-overlay"><button type="button" class="add-cart">Add to cart</button><div class="overlay-links"><a href="#">↗ Share</a><a href="comparison.html">⇄ Compare</a><a href="#">♡ Like</a></div></div>
+        </article>
+
+        <!-- Rows 2–4 repeat the four reference products -->
+        <article class="shop-product-card"><div class="shop-product-image"><img src="assets/images/product-1.jpg" alt="Syltherine stylish cafe chair" /><span class="badge badge-sale">-30%</span></div><div class="shop-product-info"><h2>Syltherine</h2><p>Stylish cafe chair</p><div class="price-row"><strong>Rp 2.500.000</strong><del>Rp 3.500.000</del></div></div><div class="shop-product-overlay"><button type="button" class="add-cart">Add to cart</button><div class="overlay-links"><a href="#">↗ Share</a><a href="comparison.html">⇄ Compare</a><a href="#">♡ Like</a></div></div></article>
+        <article class="shop-product-card"><div class="shop-product-image"><img src="assets/images/product-2.jpg" alt="Leviosa stylish cafe chair" /></div><div class="shop-product-info"><h2>Leviosa</h2><p>Stylish cafe chair</p><div class="price-row"><strong>Rp 2.500.000</strong></div></div><div class="shop-product-overlay"><button type="button" class="add-cart">Add to cart</button><div class="overlay-links"><a href="#">↗ Share</a><a href="comparison.html">⇄ Compare</a><a href="#">♡ Like</a></div></div></article>
+        <article class="shop-product-card"><div class="shop-product-image"><img src="assets/images/product-3.jpg" alt="Lolito luxury big sofa" /><span class="badge badge-sale">-50%</span></div><div class="shop-product-info"><h2>Lolito</h2><p>Luxury big sofa</p><div class="price-row"><strong>Rp 7.000.000</strong><del>Rp 14.000.000</del></div></div><div class="shop-product-overlay"><button type="button" class="add-cart">Add to cart</button><div class="overlay-links"><a href="#">↗ Share</a><a href="comparison.html">⇄ Compare</a><a href="#">♡ Like</a></div></div></article>
+        <article class="shop-product-card"><div class="shop-product-image"><img src="assets/images/product-4.jpg" alt="Respira outdoor bar table and stool" /><span class="badge badge-new">New</span></div><div class="shop-product-info"><h2>Respira</h2><p>Outdoor bar table and stool</p><div class="price-row"><strong>Rp 500.000</strong></div></div><div class="shop-product-overlay"><button type="button" class="add-cart">Add to cart</button><div class="overlay-links"><a href="#">↗ Share</a><a href="comparison.html">⇄ Compare</a><a href="#">♡ Like</a></div></div></article>
+
+        <article class="shop-product-card"><div class="shop-product-image"><img src="assets/images/product-1.jpg" alt="Syltherine stylish cafe chair" /><span class="badge badge-sale">-30%</span></div><div class="shop-product-info"><h2>Syltherine</h2><p>Stylish cafe chair</p><div class="price-row"><strong>Rp 2.500.000</strong><del>Rp 3.500.000</del></div></div><div class="shop-product-overlay"><button type="button" class="add-cart">Add to cart</button><div class="overlay-links"><a href="#">↗ Share</a><a href="comparison.html">⇄ Compare</a><a href="#">♡ Like</a></div></div></article>
+        <article class="shop-product-card"><div class="shop-product-image"><img src="assets/images/product-2.jpg" alt="Leviosa stylish cafe chair" /></div><div class="shop-product-info"><h2>Leviosa</h2><p>Stylish cafe chair</p><div class="price-row"><strong>Rp 2.500.000</strong></div></div><div class="shop-product-overlay"><button type="button" class="add-cart">Add to cart</button><div class="overlay-links"><a href="#">↗ Share</a><a href="comparison.html">⇄ Compare</a><a href="#">♡ Like</a></div></div></article>
+        <article class="shop-product-card"><div class="shop-product-image"><img src="assets/images/product-3.jpg" alt="Lolito luxury big sofa" /><span class="badge badge-sale">-50%</span></div><div class="shop-product-info"><h2>Lolito</h2><p>Luxury big sofa</p><div class="price-row"><strong>Rp 7.000.000</strong><del>Rp 14.000.000</del></div></div><div class="shop-product-overlay"><button type="button" class="add-cart">Add to cart</button><div class="overlay-links"><a href="#">↗ Share</a><a href="comparison.html">⇄ Compare</a><a href="#">♡ Like</a></div></div></article>
+        <article class="shop-product-card"><div class="shop-product-image"><img src="assets/images/product-4.jpg" alt="Respira outdoor bar table and stool" /><span class="badge badge-new">New</span></div><div class="shop-product-info"><h2>Respira</h2><p>Outdoor bar table and stool</p><div class="price-row"><strong>Rp 500.000</strong></div></div><div class="shop-product-overlay"><button type="button" class="add-cart">Add to cart</button><div class="overlay-links"><a href="#">↗ Share</a><a href="comparison.html">⇄ Compare</a><a href="#">♡ Like</a></div></div></article>
+
+        <article class="shop-product-card"><div class="shop-product-image"><img src="assets/images/product-1.jpg" alt="Syltherine stylish cafe chair" /><span class="badge badge-sale">-30%</span></div><div class="shop-product-info"><h2>Syltherine</h2><p>Stylish cafe chair</p><div class="price-row"><strong>Rp 2.500.000</strong><del>Rp 3.500.000</del></div></div><div class="shop-product-overlay"><button type="button" class="add-cart">Add to cart</button><div class="overlay-links"><a href="#">↗ Share</a><a href="comparison.html">⇄ Compare</a><a href="#">♡ Like</a></div></div></article>
+        <article class="shop-product-card"><div class="shop-product-image"><img src="assets/images/product-2.jpg" alt="Leviosa stylish cafe chair" /></div><div class="shop-product-info"><h2>Leviosa</h2><p>Stylish cafe chair</p><div class="price-row"><strong>Rp 2.500.000</strong></div></div><div class="shop-product-overlay"><button type="button" class="add-cart">Add to cart</button><div class="overlay-links"><a href="#">↗ Share</a><a href="comparison.html">⇄ Compare</a><a href="#">♡ Like</a></div></div></article>
+        <article class="shop-product-card"><div class="shop-product-image"><img src="assets/images/product-3.jpg" alt="Lolito luxury big sofa" /><span class="badge badge-sale">-50%</span></div><div class="shop-product-info"><h2>Lolito</h2><p>Luxury big sofa</p><div class="price-row"><strong>Rp 7.000.000</strong><del>Rp 14.000.000</del></div></div><div class="shop-product-overlay"><button type="button" class="add-cart">Add to cart</button><div class="overlay-links"><a href="#">↗ Share</a><a href="comparison.html">⇄ Compare</a><a href="#">♡ Like</a></div></div></article>
+        <article class="shop-product-card"><div class="shop-product-image"><img src="assets/images/product-4.jpg" alt="Respira outdoor bar table and stool" /><span class="badge badge-new">New</span></div><div class="shop-product-info"><h2>Respira</h2><p>Outdoor bar table and stool</p><div class="price-row"><strong>Rp 500.000</strong></div></div><div class="shop-product-overlay"><button type="button" class="add-cart">Add to cart</button><div class="overlay-links"><a href="#">↗ Share</a><a href="comparison.html">⇄ Compare</a><a href="#">♡ Like</a></div></div></article>
+      </div>
+
+      <nav class="pagination" aria-label="Product pages">
+        <a class="active" href="#" aria-current="page">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a class="next" href="#">Next</a>
+      </nav>
+    </section>
+
+    <section class="shop-benefits" aria-label="Shopping benefits">
+      <div class="benefits-inner">
+        <article class="benefit-item">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M20 6h24v10c0 8-5 15-12 17-7-2-12-9-12-17V6Z"/><path d="M20 11H9v6c0 7 5 12 12 12M44 11h11v6c0 7-5 12-12 12M27 33v9M37 33v9M21 42h22M18 51h28v7H18z"/></svg>
+          <div><h2>High Quality</h2><p>crafted from top materials</p></div>
+        </article>
+        <article class="benefit-item">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="m32 5 7 5 9-1 3 8 8 4-1 9 5 7-5 7 1 9-8 4-3 8-9-1-7 5-7-5-9 1-3-8-8-4 1-9-5-7 5-7-1-9 8-4 3-8 9 1z"/><path d="m22 33 7 7 14-16"/></svg>
+          <div><h2>Warranty Protection</h2><p>Over 2 years</p></div>
+        </article>
+        <article class="benefit-item">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M7 8h42v36H7zM49 21h7l3 9v14H49zM7 19h42M18 8v11M38 8v11"/><circle cx="18" cy="48" r="6"/><circle cx="49" cy="48" r="6"/></svg>
+          <div><h2>Free Shipping</h2><p>Order over 150 $</p></div>
+        </article>
+        <article class="benefit-item">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M11 34v-7a21 21 0 0 1 42 0v7M11 31H5v17h10V31zM53 31h6v17H49V31zM49 48v3c0 5-4 8-9 8h-6"/><path d="M25 58h10"/></svg>
+          <div><h2>24 / 7 Support</h2><p>Dedicated support</p></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-grid container-wide">
+      <div class="footer-brand"><h2>Funiro.</h2><p>400 University Drive Suite 200 Coral Gables,<br />FL 33134 USA</p></div>
+      <div class="footer-column"><h3>Links</h3><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="index.html#about">About</a><a href="contact.html">Contact</a><a href="blog.html">Blog</a></div>
+      <div class="footer-column"><h3>Help</h3><a href="#">Payment Options</a><a href="#">Returns</a><a href="#">Privacy Policies</a></div>
+      <div class="newsletter"><h3>Newsletter</h3><form action="#"><label class="sr-only" for="shop-email">Email address</label><input id="shop-email" type="email" placeholder="Enter Your Email Address" /><button type="submit">SUBSCRIBE</button></form></div>
+    </div>
+    <div class="copyright container-wide"><p>2023 furino. All rights reverved</p></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

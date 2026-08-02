@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Furniro - Home</title>
+
+  <!-- Figma design uses a Poppins-like font. Remove this line if your teacher wants no CDN. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner container-wide">
+      <a class="brand" href="index.html" aria-label="Furniro home">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+        <span>Furniro</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="#about">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button" type="button" aria-label="Account">
+          <img src="assets/icons/account.svg" alt="" />
+        </button>
+        <button class="icon-button" type="button" aria-label="Search">
+          <img src="assets/icons/search.svg" alt="" />
+        </button>
+        <button class="icon-button" type="button" aria-label="Wishlist">
+          <img src="assets/icons/heart.svg" alt="" />
+        </button>
+        <button class="icon-button" type="button" aria-label="Cart">
+          <img src="assets/icons/cart.svg" alt="" />
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container-wide hero-inner">
+        <div class="hero-card">
+          <p class="eyebrow">New Arrival</p>
+          <h1>Discover Our<br />New Collection</h1>
+          <p class="hero-copy">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+            luctus nec ullamcorper mattis.
+          </p>
+          <a class="button button-gold" href="#products">BUY NOW</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section range-section" id="about">
+      <div class="section-heading">
+        <h2>Browse The Range</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
+      <div class="range-grid container">
+        <article class="range-card">
+          <img src="assets/images/range-dining.jpg" alt="Dining room furniture" />
+          <h3>Dining</h3>
+        </article>
+        <article class="range-card">
+          <img src="assets/images/range-living.jpg" alt="Living room furniture" />
+          <h3>Living</h3>
+        </article>
+        <article class="range-card">
+          <img src="assets/images/range-bedroom.jpg" alt="Bedroom furniture" />
+          <h3>Bedroom</h3>
+        </article>
+      </div>
+    </section>
+
+    <section class="section products-section" id="products">
+      <div class="section-heading compact">
+        <h2>Our Products</h2>
+      </div>
+
+      <div class="product-grid container">
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="assets/images/product-1.jpg" alt="Syltherine stylish cafe chair" />
+            <span class="badge badge-sale">-30%</span>
+            <div class="product-overlay">
+              <button type="button" class="add-cart">Add to cart</button>
+              <div class="overlay-links">
+                <a href="#" aria-label="Share product">↗ Share</a>
+                <a href="#" aria-label="Compare product">⇄ Compare</a>
+                <a href="#" aria-label="Like product">♡ Like</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Syltherine</h3>
+            <p>Stylish cafe chair</p>
+            <div class="price-row"><strong>Rp 2.500.000</strong><del>Rp 3.500.000</del></div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="assets/images/product-2.jpg" alt="Leviosa stylish cafe chair" />
+            <div class="product-overlay">
+              <button type="button" class="add-cart">Add to cart</button>
+              <div class="overlay-links">
+                <a href="#" aria-label="Share product">↗ Share</a>
+                <a href="#" aria-label="Compare product">⇄ Compare</a>
+                <a href="#" aria-label="Like product">♡ Like</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Leviosa</h3>
+            <p>Stylish cafe chair</p>
+            <div class="price-row"><strong>Rp 2.500.000</strong></div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="assets/images/product-3.jpg" alt="Lolito luxury big sofa" />
+            <span class="badge badge-sale">-50%</span>
+            <div class="product-overlay">
+              <button type="button" class="add-cart">Add to cart</button>
+              <div class="overlay-links">
+                <a href="#" aria-label="Share product">↗ Share</a>
+                <a href="#" aria-label="Compare product">⇄ Compare</a>
+                <a href="#" aria-label="Like product">♡ Like</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Lolito</h3>
+            <p>Luxury big sofa</p>
+            <div class="price-row"><strong>Rp 7.000.000</strong><del>Rp 14.000.000</del></div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="assets/images/product-4.jpg" alt="Respira outdoor bar table and stool" />
+            <span class="badge badge-new">New</span>
+            <div class="product-overlay">
+              <button type="button" class="add-cart">Add to cart</button>
+              <div class="overlay-links">
+                <a href="#" aria-label="Share product">↗ Share</a>
+                <a href="#" aria-label="Compare product">⇄ Compare</a>
+                <a href="#" aria-label="Like product">♡ Like</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Respira</h3>
+            <p>Outdoor bar table and stool</p>
+            <div class="price-row"><strong>Rp 500.000</strong></div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="assets/images/product-5.jpg" alt="Grifo night lamp" />
+            <div class="product-overlay">
+              <button type="button" class="add-cart">Add to cart</button>
+              <div class="overlay-links">
+                <a href="#" aria-label="Share product">↗ Share</a>
+                <a href="#" aria-label="Compare product">⇄ Compare</a>
+                <a href="#" aria-label="Like product">♡ Like</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Grifo</h3>
+            <p>Night lamp</p>
+            <div class="price-row"><strong>Rp 1.500.000</strong></div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="assets/images/product-6.jpg" alt="Muggo small mug" />
+            <span class="badge badge-new">New</span>
+            <div class="product-overlay">
+              <button type="button" class="add-cart">Add to cart</button>
+              <div class="overlay-links">
+                <a href="#" aria-label="Share product">↗ Share</a>
+                <a href="#" aria-label="Compare product">⇄ Compare</a>
+                <a href="#" aria-label="Like product">♡ Like</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Muggo</h3>
+            <p>Small mug</p>
+            <div class="price-row"><strong>Rp 150.000</strong></div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="assets/images/product-7.jpg" alt="Pingky cute bed set" />
+            <span class="badge badge-sale">-50%</span>
+            <div class="product-overlay">
+              <button type="button" class="add-cart">Add to cart</button>
+              <div class="overlay-links">
+                <a href="#" aria-label="Share product">↗ Share</a>
+                <a href="#" aria-label="Compare product">⇄ Compare</a>
+                <a href="#" aria-label="Like product">♡ Like</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Pingky</h3>
+            <p>Cute bed set</p>
+            <div class="price-row"><strong>Rp 7.000.000</strong><del>Rp 14.000.000</del></div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="assets/images/product-8.jpg" alt="Potty minimalist flower pot" />
+            <span class="badge badge-new">New</span>
+            <div class="product-overlay">
+              <button type="button" class="add-cart">Add to cart</button>
+              <div class="overlay-links">
+                <a href="#" aria-label="Share product">↗ Share</a>
+                <a href="#" aria-label="Compare product">⇄ Compare</a>
+                <a href="#" aria-label="Like product">♡ Like</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Potty</h3>
+            <p>Minimalist flower pot</p>
+            <div class="price-row"><strong>Rp 500.000</strong></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="center-action">
+        <a class="button button-outline" href="#">Show More</a>
+      </div>
+    </section>
+
+    <section class="inspiration-section">
+      <div class="inspiration-copy">
+        <h2>50+ Beautiful rooms<br />inspiration</h2>
+        <p>Our designer already made a lot of beautiful prototype of rooms that inspire you.</p>
+        <a class="button button-gold small" href="#">Explore More</a>
+      </div>
+
+      <div class="inspiration-gallery">
+        <article class="featured-room">
+          <img src="assets/images/inspiration-1.jpg" alt="Bedroom inspiration" />
+          <div class="room-label">
+            <div>
+              <p>01 <span></span> Bed Room</p>
+              <h3>Inner Peace</h3>
+            </div>
+            <a href="#" aria-label="Open room inspiration">
+              <img src="assets/icons/arrow-right.svg" alt="" />
+            </a>
+          </div>
+        </article>
+
+        <div class="secondary-room">
+          <img src="assets/images/inspiration-2.jpg" alt="Dining room inspiration" />
+          <button class="round-arrow" type="button" aria-label="Next slide">›</button>
+          <div class="dots" aria-hidden="true">
+            <span class="active"></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <div class="gallery-stage" aria-label="Furniture gallery">
+        <div class="gallery-heading">
+          <p>Share your setup with</p>
+          <h2>#FuniroFurniture</h2>
+        </div>
+
+        <figure class="gallery-photo g1" id="gallery-item-1"><img src="assets/images/gallery-shelf.jpg" alt="Decor shelf setup" /></figure>
+        <figure class="gallery-photo g2" id="gallery-item-2"><img src="assets/images/gallery-desk.jpg" alt="Desk setup" /></figure>
+        <figure class="gallery-photo g3" id="gallery-item-3"><img src="assets/images/gallery-chair.jpg" alt="Brown vintage chair" /></figure>
+        <figure class="gallery-photo g4" id="gallery-item-4"><img src="assets/images/gallery-tables.jpg" alt="Two side tables with flower vase" /></figure>
+        <figure class="gallery-photo g5" id="gallery-item-5"><img src="assets/images/gallery-dining.jpg" alt="Dining nook" /></figure>
+        <figure class="gallery-photo g6" id="gallery-item-6"><img src="assets/images/gallery-bedroom.jpg" alt="Bedroom setup" /></figure>
+        <figure class="gallery-photo g7" id="gallery-item-7"><img src="assets/images/gallery-brick-room.jpg" alt="Dining room" /></figure>
+        <figure class="gallery-photo g8" id="gallery-item-8"><img src="assets/images/gallery-frame-vase.jpg" alt="Wall decor" /></figure>
+        <figure class="gallery-photo g9" id="gallery-item-9"><img src="assets/images/gallery-kitchen.jpg" alt="Kitchen decor" /></figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-grid container-wide">
+      <div class="footer-brand">
+        <h2>Funiro.</h2>
+        <p>400 University Drive Suite 200 Coral Gables,<br />FL 33134 USA</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Links</h3>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="#about">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Help</h3>
+        <a href="#">Payment Options</a>
+        <a href="#">Returns</a>
+        <a href="#">Privacy Policies</a>
+      </div>
+
+      <div class="newsletter">
+        <h3>Newsletter</h3>
+        <form action="#">
+          <label class="sr-only" for="email">Email address</label>
+          <input id="email" type="email" placeholder="Enter Your Email Address" />
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="copyright container-wide">
+      <p>2023 furino. All rights reverved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
