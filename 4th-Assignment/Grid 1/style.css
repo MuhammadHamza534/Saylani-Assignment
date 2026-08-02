@@ -1,0 +1,140 @@
+body {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.Parent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 80px;
+  gap: 5px;      
+  border: 2px solid black;
+  padding: 12px;
+  transition: all 2s;
+}
+
+.Parent:hover{
+  background-color: rgb(255, 0, 0);
+}
+
+.Child {
+  background-color: rgb(0, 255, 255);
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: 28px;
+  border: 2px solid black;
+  color: #00363a;
+}
+
+.Child-1 {
+  grid-column: 1/13;
+}
+
+.Child-2 {
+  grid-column: 1/7;
+}
+
+.Child-3 {
+  grid-column: 7/13;
+}
+
+.Child-4 {
+  grid-column: 1/5;
+}
+
+.Child-5 {
+  grid-column: 5/9;
+}
+
+.Child-6 {
+  grid-column: 9/13;
+}
+
+.Child-7 {
+  grid-column: 1/4;
+}
+
+.Child-8 {
+  grid-column: 4/7;
+}
+
+.Child-9 {
+  grid-column: 7/10;
+}
+
+.Child-10 {
+  grid-column: 10/13;
+}
+
+.Child-11 {
+  grid-column: 1/3;
+}
+
+.Child-12 {
+  grid-column: 3/5;
+}
+
+.Child-13 {
+  grid-column: 5/7;
+}
+
+.Child-14 {
+  grid-column: 7/9;
+}
+
+.Child-15 {
+  grid-column: 9/11;
+}
+
+.Child-16 {
+  grid-column: 11/13;
+}
+
+.Child-17 {
+  grid-column: 1/2;
+}
+
+.Child-18 {
+  grid-column: 2/3;
+}
+
+.Child-19 {
+  grid-column: 3/4;
+}
+
+.Child-20 {
+  grid-column: 4/5;
+}
+
+.Child-21 {
+  grid-column: 5/6;
+}
+
+.Child-22 {
+  grid-column: 6/7;
+}
+
+.Child-23 {
+  grid-column: 7/8;
+}
+
+.Child-24 {
+  grid-column: 8/9;
+}
+
+.Child-25 {
+  grid-column: 9/10;
+}
+
+.Child-26 {
+  grid-column: 10/11;
+}
+
+.Child-27 {
+  grid-column: 11/12;
+}
+
+.Child-28 {
+  grid-column: 12/13;
+}
