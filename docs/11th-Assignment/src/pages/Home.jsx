@@ -9,7 +9,7 @@ const newArrivals = [
     price: "$120",
     oldPrice: "",
     rating: "4.5/5",
-    image: "/assets/new-1.jpg",
+    image: "assets/new-1.jpg",
     discount: "",
   },
   {
@@ -17,7 +17,7 @@ const newArrivals = [
     price: "$240",
     oldPrice: "$260",
     rating: "3.5/5",
-    image: "/assets/new-2.jpg",
+    image: "assets/new-2.jpg",
     discount: "-20%",
   },
   {
@@ -25,7 +25,7 @@ const newArrivals = [
     price: "$180",
     oldPrice: "",
     rating: "4.5/5",
-    image: "/assets/new-3.jpg",
+    image: "assets/new-3.jpg",
     discount: "",
   },
   {
@@ -33,7 +33,7 @@ const newArrivals = [
     price: "$130",
     oldPrice: "$160",
     rating: "4.5/5",
-    image: "/assets/new-4.jpg",
+    image: "assets/new-4.jpg",
     discount: "-30%",
   },
 ];
@@ -44,7 +44,7 @@ const topSelling = [
     price: "$212",
     oldPrice: "$232",
     rating: "5.0/5",
-    image: "/assets/top-1.jpg",
+    image: "assets/top-1.jpg",
     discount: "-20%",
   },
   {
@@ -52,7 +52,7 @@ const topSelling = [
     price: "$145",
     oldPrice: "",
     rating: "4.0/5",
-    image: "/assets/top-2.jpg",
+    image: "assets/top-2.jpg",
     discount: "",
   },
   {
@@ -60,7 +60,7 @@ const topSelling = [
     price: "$80",
     oldPrice: "",
     rating: "3.0/5",
-    image: "/assets/top-3.jpg",
+    image: "assets/top-3.jpg",
     discount: "",
   },
   {
@@ -68,7 +68,7 @@ const topSelling = [
     price: "$210",
     oldPrice: "",
     rating: "4.5/5",
-    image: "/assets/top-4.jpg",
+    image: "assets/top-4.jpg",
     discount: "",
   },
 ];
@@ -166,11 +166,11 @@ function Home() {
           <picture className="hero-picture">
             <source
               media="(max-width: 700px)"
-              srcSet="/assets/hero-mobile.jpg"
+              srcSet="assets/hero-mobile.jpg"
             />
 
             <img
-              src="/assets/hero-desktop.jpg"
+              src="assets/hero-desktop.jpg"
               alt="Models wearing modern clothes"
             />
           </picture>
@@ -209,7 +209,7 @@ function Home() {
             <span>Casual</span>
 
             <img
-              src="/assets/style-casual.jpg"
+              src="assets/style-casual.jpg"
               alt="Casual fashion"
             />
           </Link>
@@ -218,7 +218,7 @@ function Home() {
             <span>Formal</span>
 
             <img
-              src="/assets/style-formal.jpg"
+              src="assets/style-formal.jpg"
               alt="Formal fashion"
             />
           </Link>
@@ -227,7 +227,7 @@ function Home() {
             <span>Party</span>
 
             <img
-              src="/assets/style-party.jpg"
+              src="assets/style-party.jpg"
               alt="Party fashion"
             />
           </Link>
@@ -236,7 +236,7 @@ function Home() {
             <span>Gym</span>
 
             <img
-              src="/assets/style-gym.jpg"
+              src="assets/style-gym.jpg"
               alt="Gym clothing"
             />
           </Link>

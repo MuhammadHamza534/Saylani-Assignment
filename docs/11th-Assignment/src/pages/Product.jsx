@@ -49,7 +49,7 @@ const relatedProducts = [
     price: "$212",
     oldPrice: "$242",
     rating: "4.0/5",
-    image: "/assets/related-1.jpg",
+    image: "assets/related-1.jpg",
     discount: "-20%",
   },
   {
@@ -57,7 +57,7 @@ const relatedProducts = [
     price: "$145",
     oldPrice: "",
     rating: "3.5/5",
-    image: "/assets/related-2.jpg",
+    image: "assets/related-2.jpg",
     discount: "",
   },
   {
@@ -65,7 +65,7 @@ const relatedProducts = [
     price: "$180",
     oldPrice: "",
     rating: "4.5/5",
-    image: "/assets/related-3.jpg",
+    image: "assets/related-3.jpg",
     discount: "",
   },
   {
@@ -73,15 +73,15 @@ const relatedProducts = [
     price: "$120",
     oldPrice: "$150",
     rating: "5.0/5",
-    image: "/assets/related-4.jpg",
+    image: "assets/related-4.jpg",
     discount: "-30%",
   },
 ];
 
 const productImages = [
-  "/assets/product-main.jpg",
-  "/assets/product-thumb-2.jpg",
-  "/assets/product-thumb-3.jpg",
+  "assets/product-main.jpg",
+  "assets/product-thumb-2.jpg",
+  "assets/product-thumb-3.jpg",
 ];
 
 function Product() {

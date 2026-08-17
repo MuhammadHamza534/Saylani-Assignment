@@ -3,25 +3,25 @@ import Newsletter from "./Newsletter";
 const socialLinks = [
   {
     name: "Twitter",
-    icon: "/assets/footer/twitter.svg",
+    icon: "assets/footer/twitter.svg",
     url: "https://twitter.com/",
     type: "twitter",
   },
   {
     name: "Facebook",
-    icon: "/assets/footer/facebook.svg",
+    icon: "assets/footer/facebook.svg",
     url: "https://facebook.com/",
     type: "facebook",
   },
   {
     name: "Instagram",
-    icon: "/assets/footer/instagram.svg",
+    icon: "assets/footer/instagram.svg",
     url: "https://instagram.com/",
     type: "instagram",
   },
   {
     name: "GitHub",
-    icon: "/assets/footer/github.svg",
+    icon: "assets/footer/github.svg",
     url: "https://github.com/",
     type: "github",
   },
@@ -30,23 +30,23 @@ const socialLinks = [
 const paymentMethods = [
   {
     name: "Visa",
-    icon: "/assets/footer/visa.svg",
+    icon: "assets/footer/visa.svg",
   },
   {
     name: "Mastercard",
-    icon: "/assets/footer/mastercard.svg",
+    icon: "assets/footer/mastercard.svg",
   },
   {
     name: "PayPal",
-    icon: "/assets/footer/paypal.svg",
+    icon: "assets/footer/paypal.svg",
   },
   {
     name: "Apple Pay",
-    icon: "/assets/footer/apple-pay.svg",
+    icon: "assets/footer/apple-pay.svg",
   },
   {
     name: "Google Pay",
-    icon: "/assets/footer/google-pay.svg",
+    icon: "assets/footer/google-pay.svg",
   },
 ];
 
